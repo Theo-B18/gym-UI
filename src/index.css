@@ -1,0 +1,555 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLE  */
+
+:root{
+  --primary-color:rgb(78, 3, 67);
+  --secondary-color: black;
+  --white-text: white;
+  --grey-bg: rgb(221, 221, 221);
+  --text-yellow:rgb(248, 184, 8);
+}
+
+/* VARIABLE END */
+
+.nav_link:hover{
+  background-color: var(--text-yellow);
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 0px 0px 5px 5px;
+
+}
+
+.main_link{
+  color:red
+}
+
+/* GENERAL CLASS */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* GENERAL CLASS END */
+
+
+
+/* UTILITY CLASSES */
+.container{
+  margin: 0px 20px 0px 20px;
+}
+        
+.flex-box{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img{
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+.text-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.text-fomat{
+  margin: 0 10px 0 10px;
+}
+
+.text-purple{
+  color: var(--primary-color);
+}
+.text-yellow{
+  color: var(--text-yellow);
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.header-design{
+  text-shadow: 0 4px 0 var(--grey-bg),
+  0 4px 0 var(--text-yellow)
+  
+}
+
+/* .header-format{ */
+  /* margin-top: 18px; */
+  /* margin-bottom: 12px; */
+/* } */
+
+.col-fit{
+  width: 100%;
+  background-color: var(--grey-bg);
+  color: var(--primary-color);
+}
+
+.paragraph-black{
+  color: var(--text-black);
+}
+
+
+
+
+.bg-purple{
+  background-color: var(--primary-color);
+  color: var(--white-text);
+}
+.bg-grey{
+  background-color: var(--grey-bg);
+  color: var(--text-black);
+}
+.bg-yellow{
+  background-color: var(--text-yellow);
+  color: var(--primary-color);
+}
+
+/* .pd{ */
+  /* padding: 8px; */
+/* } */
+
+.header{
+  padding:20px;
+
+}
+
+.mt{
+  margin-top: 10px;
+}
+.mt-top{
+  margin-top: 30px;
+}
+.mt-top-2{
+  margin-top: 60px;
+}
+.mt-exp{
+  margin-top: 20px;
+}
+
+.mt-sm{
+  margin-top: 12px;
+}
+.mt-lg{
+  margin-top: 100px;
+}
+.mt-ex-lg{
+  margin-top: 150px;
+}
+.mb{
+  margin-bottom: 10px;
+}
+
+.mb-lg{
+  margin-bottom: 100px;
+}
+
+.mr{
+  margin-right: 10px;
+}
+.ml{
+  margin-right: 10px;
+}
+
+
+
+.p-1{
+  padding: 8px;
+}
+.p-lg-1{
+  padding: 12px;
+}
+.p-xlg-1{
+  padding: 16px;
+}
+.pb-1{
+  padding-bottom: 20px;
+}
+.p-2{
+  padding: 8px;
+}
+.p-4{
+  padding: 14px;
+}
+
+
+.border-left{
+  border-left: 4px solid var(--text-yellow) ;
+}
+.border-right{
+  border-right: 4px solid var(--text-yellow) ;
+}
+.border-top{
+  border-top: 4px solid var(--text-yellow) ;
+}
+.border-bottom{
+  
+  border-bottom: 4px solid var(--text-yellow) ;
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+.title{
+  color: var(--primary-color);
+}
+
+.btn-btn-purple-sm{
+  width: 150px;
+  padding: 8px;
+  background-color: var(--primary-color);
+  color: var(--white-text);
+  font-weight: bold;
+  border-radius: 20px;
+}
+.btn-btn-purple-squre-sm{
+  width: 150px;
+  padding: 8px;
+  background-color: var(--primary-color);
+  color: var(--white-text);
+  font-weight: bold;
+ 
+}
+.btn-btn-yellow-sm{
+  width: 150px;
+  padding: 8px;
+  background-color: var(--text-yellow);
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 20px;
+}
+.btn-btn-yellow-r-cut{
+  width: 250px;
+  padding: 15px;
+  background-color: var(--text-yellow);
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius:20px 0 0 20px;
+}
+.btn-btn-yellow-l-cut{
+  width: 250px;
+  padding: 15px;
+  background-color: var(--text-yellow);
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius:0 20px 20px 0;
+}
+
+.btn-btn-purple-lg{
+  width: 500px;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: var(--text-yellow);
+  font-weight: bold;
+  border-radius: 20px;
+}
+.btn-btn-yellow-lg{
+  width: 500px;
+  padding: 15px;
+  background-color: var(--text-yellow);
+  color: var(--primary-color);
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+
+
+.card{
+  /* position: relative; */
+ width: 250px;
+ height: 350px;
+ background-color: var(--grey-bg);
+ border: 1px solid var(--primary-color);
+}
+.card-card{
+  /* position: relative; */
+ width: 250px;
+ height: 255px;
+ /* background-color: var(--grey-bg); */
+ border: 1px solid var(--primary-color);
+}
+
+/* .card-video{ */
+  /* position:absolute; */
+  /* background-color: var(--primary-color); */
+  /* width: 100%; */
+  /* height: 150px; */
+  /* z-index: 1; */
+/* } */
+
+.card-text{
+ /*  z-index: 1; */
+ /*  position: absolute; */
+  top: 170px;
+}
+
+.card-testi{
+ width: 250px;
+ height: 360px;
+ background-color: var(--grey-bg);
+ border: 1px solid var(--primary-color);
+}
+
+.card-testi-img{
+  position:relative;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 200px;
+  
+}
+
+.w-100{
+  width: 100%;
+}
+.w-50{
+  width: 50%;
+}
+
+.col-50{
+  width: 50%;
+}
+.col-30{
+  width: 30%;
+}
+.col-70{
+  width: 70%;
+}
+
+.space-around-even{
+  margin: 14px;
+  
+}
+
+.box-shadow-purple{
+  box-shadow: 10px 10px 30px var(--primary-color);
+}
+.box-shadow-grey{
+  box-shadow: 10px 10px 30px var(--grey-bg);
+}
+.box-shadow-black-thick{
+  box-shadow: 10px 5px 15px black;
+}
+.box-shadow-yellow{
+  box-shadow: 10px 10px 30px var(--text-yellow);
+}
+
+.sch-day{
+  background-color: var(--primary-color);
+  padding: 14px;
+  color: white;
+  margin: 4px;
+}
+
+.border-yellow{
+  border: 2px solid var(--text-yellow);
+}
+
+.showcase-img img{
+  width: 250px;
+  height: 300px;
+}
+
+
+
+/* UTILITY CLASSES END */
+
+/* UNIQUE CLASSES */
+
+.footer-img img{
+ width: 150px;
+}
+
+#home-full-img{
+  height: 600px;
+  position: relative;
+  
+}
+#home-full-img img{
+  width: 100%;
+  object-fit: fill;
+  height: 800px;
+
+}
+
+#gym-name{
+  position: absolute;
+  top: 50%;
+  bottom:50;
+  left: 35%;
+  
+ 
+
+}
+
+#gym-name{
+  font-size: 25px;
+  color: white;
+}
+ .gallery-img img{
+  height: 250px;
+  width: 250px;
+  border: 2px solid var(--text-yellow);
+ }
+
+ #payment-form{
+  display: none;
+ }
+
+ #btn-delivery{
+  display: none;
+ }
+ /* #btn-cancel{ */
+  /* display: none; */
+ /* } */
+
+
+
+/* UNIQUE CLASSES END */
+
+
+
+ul,li{
+  display:inline;
+  
+}
+
+ul li a{
+  text-decoration: none;
+  color: var(--white-text);
+  font-size: 14px;
+  word-spacing: 10px;
+  
+  
+}
+
+
+.nav-links{
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.logo-brand{
+  margin-right: 200px;
+}
+
+.search{
+  padding: 10px;
+  border-radius: 0px 10px 10px 0px;
+}
+.search-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+.search-txt{
+  font-size: 14px;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.add1{
+  background-color: var(--text-yellow);
+  /* background: transparent; */
+  padding: 20PX;
+  margin: 10px;
+  position: relative;
+  box-shadow: 10px 10px 30px var(--primary-color);
+  opacity: 0.8;
+
+}
+
+.add1 img{
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.col-flyer img{
+  width: 300px;
+  height: 500px;
+  margin: 0 10px 0 10px;
+}
+
+ .col-flyer{ 
+ box-shadow: 5px 5px  10px  var(--text-yellow);
+} 
+
+.col-sm img{
+  width: 300px;
+  height: 300px;
+}
+
+.col-add img{
+  width: 600px;
+  height: 300px;
+  border-radius: 30px 30px 0 0;
+  margin-right: 14px;
+  
+}
+
+.mach-add img{
+  width: 600px;
+  height: 450px;
+}
+.ex-add-flyer img{
+  width: 800px;
+  height: 400px;
+}
+.ex-add-flyer-text{
+  width: 400px;
+  height: 400px;
+}
+.footer-box-1{
+  width: 800px;
+  height: 400px;
+}
+.footer-box-2{
+  width: 400px;
+  height: 400px;
+}
+
+
+
+/* .col-add p{ */
+  /* width: 600px; */
+  /* border-radius: 0px 0px 30px 30px; */
+  /* margin-right: 10px; */
+  /*  */
+/* } */
+
+
+.bg-grey-round{
+  width: 600px;
+  background-color: var(--grey-bg);
+  color: var(--text-black);
+  border-radius: 30px 30px 30px 30px;
+  margin-right: 14px;
+  padding: 0 0 20px 0;
+}
+
+
+
